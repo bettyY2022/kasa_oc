@@ -1,0 +1,19 @@
+.imgAccueil{
+  width: 80%;
+  height: 180px;
+  filter: contrast(0.8);
+  border-radius: 15px;
+  position: relative;
+}
+p {
+  font-family: "montserrat";
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  transform: translate(10px, 50px);
+}
+.cover {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
