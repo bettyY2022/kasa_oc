@@ -23,12 +23,12 @@
     object-fit: cover;
     filter: brightness(0.8);
 }
-.titleLocation p{
-    position: absolute;
-    margin: 10px;
+.titleLocation {
+    margin-left: 10px;
     color: white;
-    font-size: 18px;
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.cardTitle {
+    background-color:  rgb(255, 96, 96) 
 }
