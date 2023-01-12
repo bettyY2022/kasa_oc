@@ -3,7 +3,10 @@ import "../components/Card.css";
 
 function Card(props) {
   return (
-    <Link to={`/logement/${props.logement.id}`}>
+    <Link
+      to={`/logement/${props.logement.id}`}
+      style={{ textDecoration: "none" }}
+    >
       <div
         className="card"
         style={{

@@ -4,7 +4,7 @@ import logements from "../logements.json";
 function Details() {
   // get id from url react-router
   const { logementID } = useParams();
-  const data = logements.find((logement) => logement.id == logementID);
+  const data = logements.find((logement) => logement.id === logementID);
   return (
     <div>
       DetailsPage
