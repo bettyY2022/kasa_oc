@@ -25,3 +25,20 @@
     text-decoration: underline;
     color: #FF6060;
   }
+  .slider{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+  }
+  .content {
+    font-size: 18px;
+    color: #FF6060;
+  }
+  .description {
+    display: flex;
+    margin: 10px;
+  }
+
+  
+ 
