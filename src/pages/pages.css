@@ -1,44 +1,100 @@
 .bodyError {
-    background-color: #E5E5E5;
-  }
-  
-  .blocError {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  strong {
-    font-size: 288px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #FF6060;
-  }
-  
-  .phraseError {
-    font-size: 36px;
-    color: #FF6060;
-  }
-  .paragError {
-    padding: 70px;
-    font-size: 18px;
-    text-decoration: underline;
-    color: #FF6060;
-  }
-  .slider{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: relative;
-  }
-  .content {
-    font-size: 18px;
-    color: #FF6060;
-  }
-  .description {
-    display: flex;
-    margin: 10px;
-  }
+  background-color: #E5E5E5;
+}
 
-  
- 
+.blocError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+strong {
+  font-size: 288px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #FF6060;
+}
+
+.phraseError {
+  font-size: 36px;
+  color: #FF6060;
+}
+
+.paragError {
+  padding: 70px;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #FF6060;
+}
+
+.slider {
+  display: flex;
+  height: 415px;
+  width: 80%;
+  border-radius: 25px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.content {
+  font-size: 18px;
+  color: #FF6060;
+}
+
+.description {
+  color: #FF6060;
+  background-color: #F6F6F6;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142.6%;
+  border-radius: 10px;
+}
+
+.borderDescription {
+  background-color: #FF6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.borderDescription p {
+  margin-left: 15px;
+}
+
+.description p {
+  margin-left: 15px;
+}
+
+.imageAbout {
+  width: 80%;
+  height: 180px;
+  filter: contrast(0.8);
+  border-radius: 15px;
+}
+
+.tag {
+  display: flex;
+  background: #FF6060;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.tagText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bloc-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+}

@@ -11,5 +11,5 @@ export function Rating({ value }) {
   for (let i = 0; i < 5 - Number(value); i++) {
     stars.push(star_vide);
   }
-  return <div>{stars}</div>;
+  return <div className="bloc-rating">{stars}</div>;
 }

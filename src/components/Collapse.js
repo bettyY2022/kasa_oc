@@ -11,21 +11,13 @@ export default function Collapse(props) {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", margin: 10 }}>
-      <div
-        onClick={() => setIsOpen(!isOpen)}
-        style={{
-          backgroundColor: "red",
-          padding: 10,
-          color: "white",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        {props.title}
+      <div className="borderDescription"
+        onClick={() => setIsOpen(!isOpen)}>
+        <p> {props.title}</p>
         {arrow}
       </div>
       {isOpen && (
-        <div style={{ backgroundColor: "lightgrey", color: "red" }}>
+        <div className="description" >
           <p>{props.content}</p>
         </div>
       )}
