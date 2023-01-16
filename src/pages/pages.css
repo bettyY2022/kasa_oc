@@ -95,6 +95,6 @@ strong {
 
 .bloc-rating {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-end;
   margin-right: 40px;
 }
