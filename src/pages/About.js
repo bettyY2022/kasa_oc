@@ -4,7 +4,7 @@ import Header from "../pages/Header";
 import "../pages/pages.css";
 import "../components/Banner.css";
 import Collapse from "../components/Collapse";
-
+import Footer from "../pages/Footer";
 
 
 export default function About() {
@@ -43,6 +43,7 @@ export default function About() {
                 </div>
              ))}
           </div>
+          <Footer />
        </div>
     );
  }

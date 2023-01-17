@@ -5,20 +5,23 @@ import "../components/Collapse";
 import Tag from "../components/Tag";
 import { Rating } from "../components/Rating";
 import Collapse from "../components/Collapse";
+import Header from "../pages/Header";
 
 function Details() {
   // get id from url react-router
   const { logementID } = useParams();
   const data = logements.find((logement) => logement.id === logementID);
   return (
-    <div
+    <div >
+      <Header />
+    <div 
       style={{
         width: "w-100",
         justifyContent: "center",
         display: "flex",
         alignItems: "center",
-      }}
-    >
+      }}   
+    >  
       <div style={{ width: "85%" }}>
         <img alt="logements" className="slider" src={data.cover} />
         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -54,6 +57,7 @@ function Details() {
               <div>
                 <img
                   src={data.host.picture}
+                  alt="host"
                   style={{ borderRadius: 75 }}
                   width={64}
                 />
@@ -84,6 +88,7 @@ function Details() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
