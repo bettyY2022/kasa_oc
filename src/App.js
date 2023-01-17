@@ -6,21 +6,34 @@ import About from "./pages/About";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error404 from "./pages/Error404";
+import Layout from "./components/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
     errorElement: <Error404 />,
   },
   {
     path: "/logement/:logementID",
-    element: <Details />,
+    element: (
+      <Layout>
+        <Details />
+      </Layout>
+    ),
     errorElement: <Error404 />,
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <Layout>
+        <About />
+      </Layout>
+    ),
   },
 ]);
 
