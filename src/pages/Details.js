@@ -1,89 +1,63 @@
 import { useParams } from "react-router-dom";
 import logements from "../logements.json";
-import "../pages/pages.css";
 import "../components/Collapse";
 import Tag from "../components/Tag";
 import { Rating } from "../components/Rating";
 import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
+import "../components/Carousel.css"
+import "../pages/Details.css";
+
 
 function Details() {
   // get id from url react-router
   const { logementID } = useParams();
   const data = logements.find((logement) => logement.id === logementID);
   return (
-    <div>
-      <div
-        style={{
-          width: "w-100",
-          justifyContent: "center",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ width: "85%" }}>
+    <div >
+      <div className="bodyDetails">
+        <div className="widthDetails">
           <div>
             <Carousel images={data.pictures} />
           </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div style={{ width: "80%" }}>
+          <div  className="Logement">
+            <div className="informationsLogement" >
               <p className="content">
-                <p>{data.title}</p>
+                <p >{data.title}</p>
                 {data.location}
               </p>
-              <div style={{ display: "flex" }}>
+              <div className="tagInformation">
                 {data.tags.map((tag) => (
                   <Tag key={tag} text={tag} />
                 ))}
               </div>
             </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "row" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    margin: 10,
-                  }}
-                >
-                  <span style={{ marginBottom: 10 }}>{data.host.name}</span>
+            <div className="host">
+              <div className="hostInformations" >
+                <div className=" hostName">
+                  <span >{data.host.name}</span>
                 </div>
                 <div>
-                  <img
+                  <img className="hostImg"
                     src={data.host.picture}
                     alt="host"
-                    style={{ borderRadius: 75 }}
-                    width={64}
                   />
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-end",
-                }}
-              >
+              <div className="stars">
                 <Rating value={data.rating} />
               </div>
             </div>
           </div>
-          <div style={{ display: "flex", flex: 2 }}>
-            <div style={{ flex: 1, margin: 10 }}>
+          <div className="descriptionEquipement">
+            <div className="box" >
               <Collapse title="Description" content={data.description} />
             </div>
-            <div style={{ flex: 1, margin: 10 }}>
+            <div className="box" >
               <Collapse
                 title="Équipements"
                 content={data.equipments.map((elt) => (
-                  <p style={{ marginTop: 0, marginBottom: 0 }}>{elt}</p>
+                  <p className="listEquipement" >{elt}</p>
                 ))}
               />
             </div>

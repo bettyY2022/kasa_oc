@@ -1,4 +1,4 @@
-import "../pages/pages.css";
+import "../components/Tag.css";
 
 export default function Tag(props) {
   return (

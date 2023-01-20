@@ -1,0 +1,37 @@
+.arrow_backward {
+    height: 55px;
+    width: 75px;
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+}
+
+.arrow_forward {
+    height: 55px;
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    right: 25px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+}
+
+.slider-image {
+    height: 415px;
+    width: 1200px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.image-number {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+}

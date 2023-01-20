@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 strong {
@@ -14,7 +14,7 @@ strong {
   font-weight: 700;
   margin-bottom: 20px;
   color: #FF6060;
-  
+
 }
 
 .phraseError {
@@ -29,28 +29,10 @@ strong {
   color: #FF6060;
 }
 
-.slider {
-  display: flex;
-  height: 415px;
-  width: 80%;
-  border-radius: 25px;
-  object-fit: cover;
-  margin: auto;
-}
-
-.content {
-  font-size: 18px;
-  color: #FF6060;
-}
-
 .description {
-  color: #FF6060;
   background-color: #F6F6F6;
-  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 142.6%;
+  height: 280px;
   border-radius: 10px;
 }
 
@@ -60,14 +42,19 @@ strong {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
+  cursor: pointer
 }
 
 .borderDescription p {
   margin-left: 15px;
 }
 
-.description p {
-  margin-left: 15px;
+.propsContent {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FF6060; 
+  margin-left: 15px; 
 }
 
 .imageAbout {
@@ -77,61 +64,84 @@ strong {
   border-radius: 15px;
 }
 
-.tag {
-  display: flex;
-  background: #FF6060;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 5px;
-}
-
-.tagText {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 142.6%;
-  text-align: center;
-  color: #FFFFFF;
-}
-
 .bloc-rating {
   display: flex;
   flex-direction: row-end;
   margin-right: 40px;
 }
-.items{
+
+.items {
   cursor: pointer;
-    font-size: 24px;
-    text-decoration: none;
-    color: #FF6060;
-    display: block;
-    padding: 0 0 0 80px; 
+  font-size: 24px;
+  text-decoration: none;
+  color: #FF6060;
+  display: block;
+  padding: 0 0 0 80px;
 }
-.header{
+
+.header {
   width: 90%;
   margin: 2% 0 1% 5%;
 }
-.header ul{
+
+.header ul {
   display: flex;
   padding: 0;
   justify-content: flex-end;
 }
-.header li{
+
+.header li {
   display: block;
-  padding: 0 0 0 80px; 
-     
+  padding: 0 0 0 80px;
+
 }
-.header a{
+
+.header a {
   cursor: pointer;
   font-size: 24px;
   text-decoration: none;
   color: #FF6060;
 }
-.header a:hover{
+
+.header a:hover {
   text-decoration: underline;
 }
-.footer__text{
-  margin-top: 30px;
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
   font-size: 24px;
+}
+
+.cover {
+  margin: 20px 50px;
+}
+
+.dropdown__box {
+  width: 60%;
+  margin: 15px 0 15px 0;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.bulletPoint {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  left: 48%;
+  cursor: pointer;
 }
