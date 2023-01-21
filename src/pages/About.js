@@ -1,6 +1,6 @@
 import React from "react";
-import imageAbout from "../pages/imageAbout.jpg";
-import "../pages/pages.css";
+import imageAbout from "../images/imageAbout.jpg";
+import "../pages/About.css";
 import "../components/Banner.css";
 import Collapse from "../components/Collapse";
 
@@ -35,7 +35,7 @@ export default function About() {
       <div className="dropdown">
         {items.map((item) => (
           <div className="dropdown__box" key={item.id}>
-            <Collapse title={item.value} content={item.text} />
+            <Collapse className="fontSizeDesciption" title={item.value} content={item.text} />
           </div>
         ))}
       </div>

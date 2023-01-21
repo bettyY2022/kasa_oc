@@ -20,7 +20,7 @@ function Details() {
           <div>
             <Carousel images={data.pictures} />
           </div>
-          <div  className="Logement">
+          <div className="Logement">
             <div className="informationsLogement" >
               <p className="content">
                 <p >{data.title}</p>

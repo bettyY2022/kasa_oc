@@ -1,7 +1,6 @@
 import { useState } from "react";
 import arrow_forward from "../arrow_forward.svg";
 import arrow_backward from "../arrow_backward.svg";
-import "../pages/pages.css";
 import "../components/Carousel.css"
 
 export default function Carousel({ images }) {

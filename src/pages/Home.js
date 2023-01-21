@@ -2,7 +2,6 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import "../components/Card.css";
 import logements from "../logements.json";
-import "../pages/pages.css";
 
 function Home() {
   const cards = logements.map((logement, i) => (

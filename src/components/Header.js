@@ -1,6 +1,6 @@
 import React from "react";
-import Img from "../pages/logo.png";
-import "../pages/pages.css";
+import Img from "../images/logo.png";
+import "../components/Header.css";
 import { Link } from "react-router-dom";
 
 export default function Header() {

@@ -1,4 +1,4 @@
-import banner from "./banner.png";
+import banner from "../images/banner.png";
 import "../components/Banner.css";
 
 function Banner() {

@@ -35,3 +35,14 @@
     left: 50%;
     bottom: 35px;
 }
+
+.bulletPoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    left: 48%;
+    cursor: pointer;
+  }

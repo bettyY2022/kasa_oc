@@ -5,14 +5,12 @@ function Card(props) {
   return (
     <Link
       to={`/logement/${props.logement.id}`}
-      style={{ textDecoration: "none" }}
+      className="textDecoration"
     >
       <div
         className="card"
         style={{
           backgroundImage: `url(${props.logement.cover})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
         }}
       >
         <div className="cardTitle">

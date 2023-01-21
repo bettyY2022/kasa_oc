@@ -1,4 +1,5 @@
-import "../pages/pages.css";
+import "../pages/Error404.css";
+import { Link } from "react-router-dom";
 
 function Error404() {
   return (
@@ -9,7 +10,7 @@ function Error404() {
           <p className="phraseError">
             Oups! La page que vous demandez n'existe pas.
           </p>
-          <p className="paragError">Retourner sur la page d'accueil </p>
+          <Link to="/" className="paragError"> Retourner sur la page d'accueil </Link>
         </div>
       </div>
     </div>
