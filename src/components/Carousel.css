@@ -22,8 +22,8 @@
 }
 
 .slider-image {
-    height: 415px;
-    width: 1200px;
+    width: "90%";
+    height: 250px;
     border-radius: 25px;
     object-fit: cover;
 }
