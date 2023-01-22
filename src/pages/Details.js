@@ -25,10 +25,10 @@ function Details() {
           </div>
           <div className="Logement">
             <div className="informationsLogement">
-              <span style={{ color: "red", fontSize: 18 }} className="content">
+              <span className="content">
                 {data.title}
               </span>
-              <span style={{ color: "red", fontSize: 12 }}>
+              <span style={{ color: "#FF6060"}}>
                 {data.location}
               </span>
               <div className="tagInformation">

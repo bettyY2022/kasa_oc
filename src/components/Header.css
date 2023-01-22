@@ -1,30 +1,41 @@
 .header {
-    margin: 10px;
-    display:flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .header ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .header li {
-    display: block;
-    font-size: 12px;
-  }
-  
-  .header a {
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    color: #FF6060;
-  }
-  
-  .header a:hover {
-    text-decoration: underline;
-  }
-  
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header img{
+  width: 90px;
+  height: 50px;
+}
+.header ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.header li {
+  display: block;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.header a {
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.justifyHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}

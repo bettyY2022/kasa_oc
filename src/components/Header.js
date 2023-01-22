@@ -6,16 +6,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div className="header">
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "85%",
-        }}
-      >
-        <img src={Img} alt="logo de Kasa" width={90} height={50}></img>
-        <ul style={{ fontSize: 14 }}>
-          <li style={{ marginRight: 20 }}>
+      <nav className="justifyHeader">
+        <img src={Img} alt="logo de Kasa"></img>
+        <ul >
+          <li >
             <Link to="/">Accueil</Link>
           </li>
           <li>
