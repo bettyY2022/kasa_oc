@@ -10,7 +10,9 @@ function Home() {
   return (
     <div>
       <Banner />
-      <div className="CardKasa">{cards}</div>
+      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <div className="CardKasa">{cards}</div>
+      </div>
     </div>
   );
 }

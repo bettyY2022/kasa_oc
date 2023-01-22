@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import logements from "../logements.json";
 import "../components/Collapse";
 import Tag from "../components/Tag";
@@ -9,9 +9,13 @@ import "../components/Carousel.css";
 import "../pages/Details.css";
 
 function Details() {
-  // get id from url react-router
+  // get id from url by react-router
   const { logementID } = useParams();
+  const navigate = useNavigate();
   const data = logements.find((logement) => logement.id === logementID);
+  if (data === undefined) {
+    navigate("/404");
+  }
   return (
     <div>
       <div className="bodyDetails">
@@ -21,8 +25,12 @@ function Details() {
           </div>
           <div className="Logement">
             <div className="informationsLogement">
-              <span className="content">{data.title}</span>
-              <span> {data.location}</span>
+              <span style={{ color: "red", fontSize: 18 }} className="content">
+                {data.title}
+              </span>
+              <span style={{ color: "red", fontSize: 12 }}>
+                {data.location}
+              </span>
               <div className="tagInformation">
                 {data.tags.map((tag) => (
                   <Tag key={tag} text={tag} />

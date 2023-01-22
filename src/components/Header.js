@@ -10,12 +10,12 @@ export default function Header() {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          width: "100%",
+          width: "85%",
         }}
       >
         <img src={Img} alt="logo de Kasa" width={90} height={50}></img>
         <ul style={{ fontSize: 14 }}>
-          <li>
+          <li style={{ marginRight: 20 }}>
             <Link to="/">Accueil</Link>
           </li>
           <li>

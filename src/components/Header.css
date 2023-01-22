@@ -14,8 +14,7 @@
   
   .header li {
     display: block;
-    padding: 0 0 0 20px;
-  
+    font-size: 12px;
   }
   
   .header a {

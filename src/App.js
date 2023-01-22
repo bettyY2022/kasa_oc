@@ -16,10 +16,6 @@ const router = createBrowserRouter([
         <Home />
       </Layout>
     ),
-    errorElement: 
-    <Layout>
-    <Error404 />
-    </Layout>
   },
   {
     path: "/logement/:logementID",
@@ -28,10 +24,11 @@ const router = createBrowserRouter([
         <Details />
       </Layout>
     ),
-    errorElement: 
-    <Layout>
-    <Error404 />
-    </Layout>
+    errorElement: (
+      <Layout>
+        <Error404 />
+      </Layout>
+    ),
   },
   {
     path: "/about",
