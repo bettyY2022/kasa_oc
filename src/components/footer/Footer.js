@@ -1,6 +1,6 @@
 import React from "react";
-import logoFooter from "../images/logoFooter.png";
-import "../components/Footer.css"
+import logoFooter from "../../images/logoFooter.png";
+import "../../components/footer/Footer.css"
 
 export default function Footer() {
     return (

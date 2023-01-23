@@ -13,16 +13,13 @@
     background-color: #F6F6F6;
     font-style: normal;
     border-radius: 0 0 10px 10px;
-}
-
-.propsContent {
+    margin-top: 10px;
     font-family: Montserrat;
     font-size: 19px;
-    line-height: 25px;
+    line-height: 25px; 
     color: #FF6060;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 30px;
+    min-height: 170px;
+    padding: 10px;
 }
 
 .borderDescription p {

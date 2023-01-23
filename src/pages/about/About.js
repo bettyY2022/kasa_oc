@@ -1,8 +1,8 @@
 import React from "react";
-import imageAbout from "../images/imageAbout.jpg";
-import "../pages/About.css";
-import "../components/Banner.css";
-import Collapse from "../components/Collapse";
+import imageAbout from "../../images/imageAbout.jpg";
+import "./About.css";
+import "../../components/banner/Banner.css";
+import Collapse from "../../components/collapse/Collapse";
 
 export default function About() {
   const items = [

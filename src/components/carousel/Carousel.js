@@ -1,13 +1,13 @@
 import { useState } from "react";
-import arrow_forward from "../images/arrow_forward.svg";
-import arrow_backward from "../images/arrow_backward.svg";
-import "../components/Carousel.css"
+import arrow_forward from "../../images/arrow_forward.svg";
+import arrow_backward from "../../images/arrow_backward.svg";
+import "./Carousel.css"
 
 export default function Carousel({ images }) {
   const [index, setIndex] = useState(0);
   return (
-    <div className="slider">
-      <img className="slider-image" alt="logements"  src={images[index]} />
+    <div  className="slider">
+      <img  className="slider-image" alt="logements"  src={images[index]} />
       <img 
         src={arrow_backward}
         alt="flèche vers la gauche"
@@ -22,7 +22,7 @@ export default function Carousel({ images }) {
       />
       <div className="bulletPoint">
         {images.map((img, i) => (
-          <li onClick={() => setIndex(i)}></li>
+          <li key={i} onClick={() => setIndex(i)}></li>
         ))}
       </div>
       <p  className="image-number">

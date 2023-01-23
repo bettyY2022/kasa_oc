@@ -1,7 +1,7 @@
-import "../components/Collapse.css";
+import "./Collapse.css";
 import { useState } from "react";
-import arrow_up from "../images/arrow_up.svg";
-import arrow_down from "../images/arrow_down.svg";
+import arrow_up from "../../images/arrow_up.svg";
+import arrow_down from "../../images/arrow_down.svg";
 
 export default function Collapse(props) {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,7 +18,7 @@ export default function Collapse(props) {
       </div>
       {isOpen && (
         <div className="description">
-          <p className="propsContent">{props.content}</p>
+          <span className="propsContent">{props.content}</span>
         </div>
       )}
     </div>

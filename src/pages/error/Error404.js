@@ -1,4 +1,4 @@
-import "../pages/Error404.css";
+import "./Error404.css";
 import { Link } from "react-router-dom";
 
 function Error404() {

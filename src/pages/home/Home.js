@@ -1,8 +1,8 @@
-import Banner from "../components/Banner";
-import Card from "../components/Card";
-import "../components/Card.css";
-import logements from "../logements.json";
-import "../pages/Home.css";
+import Banner from "../../components/banner/Banner";
+import Card from "../../components/card/Card";
+import "../../components/card/Card.css";
+import logements from "../../logements.json";
+import "./Home.css";
 
 function Home() {
   const cards = logements.map((logement, i) => (

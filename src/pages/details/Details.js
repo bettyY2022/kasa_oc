@@ -1,12 +1,12 @@
 import { useParams, useNavigate } from "react-router-dom";
-import logements from "../logements.json";
-import "../components/Collapse";
-import Tag from "../components/Tag";
-import { Rating } from "../components/Rating";
-import Collapse from "../components/Collapse";
-import Carousel from "../components/Carousel";
-import "../components/Carousel.css";
-import "../pages/Details.css";
+import logements from "../../logements.json";
+import "../../components/collapse/Collapse";
+import Tag from "../../components/tag/Tag";
+import { Rating } from "../../components/rating/Rating";
+import Collapse from "../../components/collapse/Collapse";
+import Carousel from "../../components/carousel/Carousel";
+import "../../components/carousel/Carousel.css";
+import "./Details.css";
 
 function Details() {
   // get id from url by react-router
@@ -47,7 +47,7 @@ function Details() {
                 </div>
               </div>
               <div className="stars">
-                <Rating value={data.rating} />
+                <Rating key={data.id} value={data.rating} />
               </div>
             </div>
           </div>
@@ -58,8 +58,8 @@ function Details() {
             <div className="box">
               <Collapse
                 title="Équipements"
-                content={data.equipments.map((elt) => (
-                  <p className="listEquipement">{elt}</p>
+                content={data.equipments.map((elt,index) => (
+                  <p key={index} className="listEquipement">{elt}</p>
                 ))}
               />
             </div>
