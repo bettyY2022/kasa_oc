@@ -4,7 +4,7 @@ import "./Card.css";
 function Card(props) {
   return (
     <Link
-      to={`/logement/${props.logement.id}`}
+      to={"/logement/" + props.logement.id}
       className="textDecoration"
     >
       <div
