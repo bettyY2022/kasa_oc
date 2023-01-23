@@ -25,12 +25,8 @@ function Details() {
           </div>
           <div className="Logement">
             <div className="informationsLogement">
-              <span className="content">
-                {data.title}
-              </span>
-              <span style={{ color: "#FF6060"}}>
-                {data.location}
-              </span>
+              <span className="content">{data.title}</span>
+              <span style={{ color: "#FF6060" }}>{data.location}</span>
               <div className="tagInformation">
                 {data.tags.map((tag) => (
                   <Tag key={tag} text={tag} />
@@ -53,14 +49,22 @@ function Details() {
           </div>
           <div className="descriptionEquipement">
             <div className="box">
-              <Collapse title="Description" content={data.description} />
+              <Collapse
+                height={data.equipments.length * 30}
+                title="Description"
+                content={data.description}
+              />
             </div>
             <div className="box">
               <Collapse
+                height={data.equipments.length * 30}
                 title="Équipements"
-                content={data.equipments.map((elt,index) => (
-                  <p key={index} className="listEquipement">{elt}</p>
+                content={data.equipments.map((elt, index) => (
+                  <p key={index} className="listEquipement">
+                    {elt}
+                  </p>
                 ))}
+                eqs={data.equipments.length}
               />
             </div>
           </div>

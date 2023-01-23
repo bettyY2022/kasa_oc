@@ -1,40 +1,46 @@
+@media screen and (max-width: 699px) {
+  .description {
+    height: auto;
+  }
+}
+
 .borderDescription {
-    background-color: #FF6060;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: -10px;
-    position: relative;
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: -10px;
+  position: relative;
 }
 
 .description {
-    background-color: #F6F6F6;
-    font-style: normal;
-    border-radius: 0 0 10px 10px;
-    margin-top: 10px;
-    font-family: Montserrat;
-    font-size: 19px;
-    line-height: 25px; 
-    color: #FF6060;
-    min-height: 170px;
-    padding: 10px;
+  background-color: #f6f6f6;
+  font-style: normal;
+  border-radius: 0 0 10px 10px;
+  margin-top: 10px;
+  font-family: Montserrat;
+  font-size: 19px;
+  line-height: 30px;
+  color: #ff6060;
+  padding: 10px;
+  padding: 20px;
 }
 
 .borderDescription p {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .arrowUp {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .arrowDown {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .collapse {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
