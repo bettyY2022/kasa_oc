@@ -1,10 +1,11 @@
-.imgAccueil{
+.imgAccueil {
   width: 84%;
   height: 180px;
   filter: contrast(0.8);
   border-radius: 15px;
   position: relative;
 }
+
 .p-banner {
   font-family: "montserrat";
   position: absolute;
@@ -12,7 +13,27 @@
   font-size: 34px;
   transform: translate(10px, 50px);
 }
+
 .cover {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 699px) {
+  .imgAccueil {
+    height: 100px;
+    width: 75%;
   }
+
+  .p-banner {
+    left: 15%;
+    right: 20%;
+    bottom: 80%;
+    font-size: 25px;
+    line-height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+
+}

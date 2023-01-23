@@ -1,5 +1,5 @@
-import star from "../star.svg";
-import starC from "../starC.svg";
+import star from "../images/star.svg";
+import starC from "../images/starC.svg";
 
 export function Rating({ value }) {
   const star_pleine = <img src={starC} alt="star" />;

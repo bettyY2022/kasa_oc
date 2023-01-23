@@ -1,21 +1,30 @@
-
 .imageAbout {
-    width: 85%;
-    height: 180px;
-    filter: contrast(0.8);
-    border-radius: 15px;
+  width: 85%;
+  height: 180px;
+  filter: contrast(0.8);
+  border-radius: 15px;
 }
+
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.dropdown__box {
+  width: 70%;
+  margin: 15px 0 15px 0;
+}
+
+.fontSizeDesciption {
+  font-size: 24;
+}
+
+@media screen and (max-width: 699px) {
+  .imageAbout {
+    width: 90%;
+
   }
-  .dropdown__box {
-    width: 70%;
-    margin: 15px 0 15px 0;
-  }
-  .fontSizeDesciption{
-    font-size: 24;
-  }
+}
