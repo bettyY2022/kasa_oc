@@ -42,4 +42,8 @@
   .header li {
     margin-right: 12px;
   }
+  .header img {
+    height: 37px;
+  }
+
 }
