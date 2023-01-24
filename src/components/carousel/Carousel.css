@@ -45,4 +45,10 @@
     color: white;
     left: 48%;
     cursor: pointer;
-  }
+}
+
+@media screen and (max-width: 699px) {
+    .bulletPoint {
+        left: 36%;
+    }
+}
