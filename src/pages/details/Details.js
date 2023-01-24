@@ -7,21 +7,27 @@ import Collapse from "../../components/collapse/Collapse";
 import Carousel from "../../components/carousel/Carousel";
 import "../../components/carousel/Carousel.css";
 import "./Details.css";
+import { useEffect } from "react";
 
 function Details() {
   // get id from url by react-router
   const { logementID } = useParams();
   const navigate = useNavigate();
   const data = logements.find((logement) => logement.id === logementID);
-  if (data === undefined) {
-    navigate("/404");
-  }
+  useEffect(() => {
+    if (!data) {
+      navigate("/404");
+    }
+  });
+
+  if (!data) return null;
+
   return (
     <div>
       <div className="bodyDetails">
         <div className="widthDetails">
           <div>
-            <Carousel images={data.pictures} />
+            <Carousel images={data?.pictures} />
           </div>
           <div className="Logement">
             <div className="informationsLogement">
@@ -36,10 +42,14 @@ function Details() {
             <div className="host">
               <div className="hostInformations">
                 <div className=" hostName">
-                  <span>{data.host.name}</span>
+                  <span>{data.host?.name}</span>
                 </div>
                 <div>
-                  <img className="hostImg" src={data.host.picture} alt="host" />
+                  <img
+                    className="hostImg"
+                    src={data.host?.picture}
+                    alt="host"
+                  />
                 </div>
               </div>
               <div className="stars">
@@ -57,14 +67,14 @@ function Details() {
             </div>
             <div className="box">
               <Collapse
-                height={data.equipments.length * 30}
+                height={data.equipments?.length * 30}
                 title="Équipements"
                 content={data.equipments.map((elt, index) => (
                   <p key={index} className="listEquipement">
                     {elt}
                   </p>
                 ))}
-                eqs={data.equipments.length}
+                eqs={data.equipments?.length}
               />
             </div>
           </div>

@@ -4,7 +4,7 @@ import arrow_up from "../../images/arrow_up.svg";
 import arrow_down from "../../images/arrow_down.svg";
 
 export default function Collapse(props) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   let arrow;
   if (isOpen) arrow = <img className="arrowUp" src={arrow_up} alt="up" />;
